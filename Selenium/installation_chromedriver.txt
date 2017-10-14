@@ -1,3 +1,0 @@
-- Download Geckodriver from http://chromedriver.storage.googleapis.com/index.html
-- Extract it
-
