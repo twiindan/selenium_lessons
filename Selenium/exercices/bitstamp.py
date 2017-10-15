@@ -1,17 +1,18 @@
 
-#import webdriver
+# import webdriver
 
 
-#define baseURL
+# define baseURL
 
 
-#Open browser
+# Open browser
 
 
-#Open baseUrl
+# Open baseUrl
 
 
-#Get the element with lastprice
+# Get the element with lastprice
 
 
-#Print the Bitcoin price
+# Print the Bitcoin price
+
