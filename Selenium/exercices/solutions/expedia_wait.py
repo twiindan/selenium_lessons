@@ -1,6 +1,9 @@
+from selenium.webdriver.support.select import Select
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.select import Select
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+from time import sleep
 
 # Configure the baseURL
 baseUrl = "https://www.expedia.es"
@@ -11,7 +14,6 @@ driver.maximize_window()
 
 # Navigage to URL and put a 10 seconds implicit wait
 driver.get(baseUrl)
-driver.implicitly_wait(10)
 
 # Find and click on element "Flights"
 travelType = driver.find_element(By.ID, "tab-flight-tab-hp")
@@ -60,5 +62,13 @@ for button in findButtons:
         button.click()
         break
 
-#Quit Driver
+# Wait the element that contain the first price and print it. Wait it 15 seconds with 0.5 polling frequency
+# You can use the CSS Selector ".offer-price>span" to get the first price
+element = WebDriverWait(driver, timeout=15,
+                        poll_frequency=0.5).until(EC.presence_of_element_located((By.CSS_SELECTOR,
+                                                                                  ".offer-price>span")))
+print(element.text)
+sleep(3)
+
+
 driver.quit()
