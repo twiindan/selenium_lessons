@@ -1,6 +1,7 @@
-from nose.tools import assert_equals
-from selenium import webdriver
 from framework.pages.loginPage import loginPage
+from framework.core.webdriverfactory import WebDriverFactory
+from framework.core.configuration import webdriver_configuration
+
 import random
 
 
@@ -10,10 +11,9 @@ class testLogin():
 
     @classmethod
     def setup_class(self):
-        self.driver = webdriver.Firefox()
-        self.driver.implicitly_wait(3)
+        wdf = WebDriverFactory(webdriver_configuration)
+        self.driver = wdf.getWebDriverInstance()
         self.login_page = loginPage(self.driver)
-
 
     def setup(self):
         self.login_page.navigate()
