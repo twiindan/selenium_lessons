@@ -1,4 +1,4 @@
-from framework.pages.base import BasePage
+from framework.core.base import BasePage
 
 
 
