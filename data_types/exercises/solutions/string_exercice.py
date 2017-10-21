@@ -5,16 +5,12 @@ python_string = "hello world"
 # to "H" and "W"
 
 indexH = python_string.find("h")
-python_string[indexH] = "H"
-
 indexW = python_string.find("w")
-python_string[indexW] = "W"
 
-print(python_string)
+python_string_list = list(python_string)
+python_string_list[indexH] = "H"
+python_string_list[indexW] = "W"
 
-python_string = "hello world"
-
-python_string[python_string.find("h")] = "H"
-python_string[python_string.find("w")] = "W"
+python_string = "".join(python_string_list)
 
 print(python_string)

@@ -6,15 +6,15 @@ MOD 07: Booleans
 # Let's declare some bools
 
 spam = True
-print spam
+print(spam)
 
-print type(spam)
+print(type(spam))
 
 
 eggs = False
-print eggs
+print(eggs)
 
-print type(eggs)
+print(type(eggs))
 
 
 #===============================================================================
@@ -32,16 +32,16 @@ print type(eggs)
 
 # Let's try boolean operations
 
-print True or True
-print True or False
-print False or True   # Boolean or. Short-circuited, so it only evaluates the second argument if the first one is False
+print(True or True)
+print(True or False)
+print(False or True)   # Boolean or. Short-circuited, so it only evaluates the second argument if the first one is False
 
-print True and True
-print True and False
-print False and True  # Boolean or. Short-circuited, so it only evaluates the second argument if the first one is True
+print(True and True)
+print(True and False)
+print(False and True)  # Boolean or. Short-circuited, so it only evaluates the second argument if the first one is True
 
-print not True
-print not False
+print(not True)
+print(not False)
 
 
 # What about comparisons?
@@ -49,21 +49,21 @@ print not False
 spam = 2
 eggs = 2.5
 
-print spam == 2         # equal
+print(spam == 2)         # equal
 
-print spam != eggs      # not equal
+print(spam != eggs)      # not equal
 
-print spam >= eggs      # greater than or equal
+print(spam >= eggs)      # greater than or equal
 
-print spam > eggs       # strictly greater than
+print(spam > eggs)       # strictly greater than
 
-print spam <= eggs      # less than or equal
+print(spam <= eggs)      # less than or equal
 
-print spam < eggs       # strictly less than
+print(spam < eggs)       # strictly less than
 
-print spam is 2         # object identity, useful to compare with None (discussed latter)
+print(spam is 2)         # object identity, useful to compare with None (discussed latter)
 
-print spam is not None  # negated object identity
+print(spam is not None)  # negated object identity
 
 
 

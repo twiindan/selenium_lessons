@@ -32,6 +32,6 @@ carrito.add_item('potatoes', 2)
 carrito.add_item('tralara', 3)
 
 total = carrito.calculate_total_price()
-print total
+print(total)
 
 

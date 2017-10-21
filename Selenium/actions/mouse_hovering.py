@@ -23,3 +23,5 @@ try:
     print("Item Clicked")
 except:
     print("Mouse Hover failed on element")
+
+driver.quit()

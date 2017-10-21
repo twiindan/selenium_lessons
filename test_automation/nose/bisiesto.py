@@ -8,15 +8,14 @@ def es_bisiesto(year):
         return "Error: Should be a positive number"
 
     if year % 100 == 0:
-        print "Divisible entre 100"
         if year % 400 == 0:
-            return 'Es bisiesto'
+            return 'Is leap year'
         else:
-            return 'No es bisiesto'
+            return 'Is not leap year'
 
     elif year % 4 == 0:
-        return 'Es bisiesto'
+        return 'Is leap year'
     else:
-        return 'No es bisiesto'
+        return 'Is not leap year'
 
 

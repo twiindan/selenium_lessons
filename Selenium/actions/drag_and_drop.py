@@ -23,3 +23,5 @@ try:
     time.sleep(2)
 except:
     print("Drag And Drop failed on element")
+
+driver.quit()

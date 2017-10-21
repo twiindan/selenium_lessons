@@ -19,7 +19,7 @@ class Catalog():
     def list_catalog(self):
 
         for product in self.items_catalog:
-            print product + ' : ' + str(self.items_catalog[product])
+            print(product + ' : ' + str(self.items_catalog[product]))
         return self.items_catalog
 
     def clear_catalog(self):
@@ -62,7 +62,7 @@ class Carritus():
     def list_items(self):
 
         if len(self.items_carritus) == 0:
-            print "No products in Carritus"
+            print ("No products in Carritus")
 
         for item in self.items_carritus:
             print("Product: " + item + " Quantity: " + str(self.items_carritus[item]))

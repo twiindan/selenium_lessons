@@ -16,3 +16,4 @@ listUsers = driver.find_element_by_id('list_users')
 listUsers.click()
 
 noUsers = driver.find_element_by_id("userlist")
+driver.quit()

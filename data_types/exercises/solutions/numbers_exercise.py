@@ -14,6 +14,6 @@ print(result)
 
 result = float(872) / float(13)
 
-print (type(result))
-print (result)
+print(type(result))
+print(result)
 

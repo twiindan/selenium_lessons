@@ -18,4 +18,4 @@ driver.find_element(By.ID, "confirmbtn").click()
 time.sleep(2)
 alert2 = driver.switch_to.alert
 alert2.dismiss()
-
+driver.quit()

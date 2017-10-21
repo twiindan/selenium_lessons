@@ -20,3 +20,4 @@ try:
     time.sleep(2)
 except:
     print("Sliding failed on element")
+driver.quit()

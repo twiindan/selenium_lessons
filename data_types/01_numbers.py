@@ -3,56 +3,52 @@
 
 
 spam = 65              # an integer declaration.
-print spam
+print(spam)
 
-print type(spam)       # this is a function call
+print(type(spam))       # this is a function call
 
 eggs = 2
-print eggs
-print type(eggs)
+print(eggs)
+print(type(eggs))
 
 # Let's see the numeric operations
 
-print spam + eggs      # sum
+print(spam + eggs)      # sum
 
-print spam - eggs      # difference
+print(spam - eggs)      # difference
 
-print spam * eggs      # product
+print(spam * eggs)      # product
 
-print spam / eggs      # quotient
+print(spam / eggs)      # quotient
 
-print spam % eggs      # remainder or module
+print(spam % eggs)      # remainder or module
 
-print spam ** eggs     # power
+print(spam ** eggs)     # power
 
 fooo = -2              # negative value
-print fooo
-print type(fooo)
+print(fooo)
+print(type(fooo))
 
-print -fooo            # negated
+print(-fooo)            # negated
 
-print abs(fooo)        # absolute value
+print(abs(fooo))        # absolute value
 
-print int(fooo)        # convert to integer
+print(int(fooo))        # convert to integer
 
-print long(fooo)       # convert to long integer
-
-print float(fooo)      # convert to float
+print(float(fooo))      # convert to float
 
 fooo += 1              # auto incremental
-print fooo
+print(fooo)
 
 # More on the quotient
 
-print spam / eggs          # quotient
-print spam / float(eggs)   # quotient
+print(spam / eggs)          # quotient
+print(spam / float(eggs))   # quotient
 
 # More on the operations result type
 
-print type(spam + eggs)
-print type(long(spam) + eggs)
-print type(float(spam) + eggs)
-print type(float(spam) + long(eggs))
+print(type(spam + eggs))
+print(type(float(spam) + eggs))
 
 #===============================================================================
 # - Python automatically infers the type of the result depending on operands type
@@ -60,24 +56,8 @@ print type(float(spam) + long(eggs))
 
 # Let's try again the power
 
-print eggs ** spam
-print type(eggs ** spam)
-
-
-#===============================================================================
-# - Python automatically converts integers into longs
-#===============================================================================
-
-
-# Let's instantiate other values
-
-spam = 65L             # a long
-print spam
-print type(spam)
-
-eggs = 2.0             # a float
-print eggs
-print type(eggs)
+print(eggs ** spam)
+print(type(eggs ** spam))
 
 
 #===============================================================================

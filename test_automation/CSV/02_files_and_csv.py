@@ -19,24 +19,24 @@ append_file.close()
 
 #Read all the file
 read_file = open("new_testfile.txt", "r")
-print read_file.read()
+print((read_file.read()))
 read_file.close()
 
 #Read only the first characters
 read_file = open("new_testfile.txt", "r")
-print read_file.read(5)
+print((read_file.read(5)))
 read_file.close()
 
 
 #Read one line
 line_file = open("new_testfile.txt", "r")
-print line_file.readline()
+print((line_file.readline()))
 line_file.close()
 
 
 #Read all lines
 lines_file = open("new_testfile.txt", "r")
-print lines_file.readlines()
+print((lines_file.readlines()))
 lines_file.close()
 
 
@@ -44,14 +44,14 @@ lines_file.close()
 
 file = open("new_testfile.txt", "r")
 for line in file:
-    print line
+    print(line)
 
 
 #With Statement
 
 with open("new_testfile.txt", "r") as file:
     for line in file:
-        print line
+        print(line)
 
 
 #Now we can try to read csv files
@@ -61,7 +61,7 @@ import csv
 csv_file = open("example.csv", "r")
 csv_reader = csv.reader(csv_file)
 for row in csv_reader:
-    print row
+    print (row)
 
 csv_file.close()
 
@@ -69,17 +69,17 @@ csv_file.close()
 csv_file = open("csv_example_other_delimiter.csv", "r")
 csv_reader = csv.reader(csv_file, delimiter=';')
 for row in csv_reader:
-    print "ROW DATA START"
+    print("ROW DATA START")
     for data in row:
-        print data
-    print "ROW DATA FINISH\n"
+        print(data)
+    print("ROW DATA FINISH\n")
 csv_file.close()
 
 
 with open("example.csv", "r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     for row in csv_reader:
-        print row
+        print(row)
 
 #And we can also write csv files
 
@@ -102,5 +102,8 @@ with open("example_writterDict.csv", "w") as csv_file:
     csv_writter.writerow({'Cost': '1200', 'Name': 'Agile Testing Days', 'Month': 'October'})
 
 
-#https://docs.python.org/2/tutorial/inputoutput.html
-#https://docs.python.org/2/library/csv.html
+# ===============================================================================
+# SOURCES:
+#  - https://docs.python.org/2/tutorial/inputoutput.html
+#  - https://docs.python.org/2/library/csv.html
+# ===============================================================================

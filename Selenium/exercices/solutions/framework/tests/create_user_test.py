@@ -61,3 +61,7 @@ class testCreateUser():
 
         # Assert element text from the username element is the same than username variable
         assert_equals(username_element.text, username)
+
+    @classmethod
+    def teardown_class(self):
+        self.driver.quit()
