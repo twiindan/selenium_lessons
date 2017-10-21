@@ -11,25 +11,21 @@ class homePage(BasePage):
 
     # Locate all the elements of the Home Page
     def locate_elements(self):
-        self._newUserLink = self.driver.find_element_by_link_text('Create a new user')
-        self._listUserLink = self.driver.find_element_by_link_text('List users')
-        self._newForumMessageLink = self.driver.find_element_by_link_text('Create new forum message')
-        self._listForumLink = self.driver.find_element_by_link_text('List forum message')
+        pass
 
     # Navigate to the new user page
     def navigate_new_user_page(self):
-        self._newUserLink.click()
-        return newUserPage(self.driver)
+        pass
 
     # Navigate to the new forum message page
     def navigate_new_forum_message_page(self):
-        self._newForumMessageLink.click()
+        pass
 
     # Navigate to the user list
     def navigate_user_list_page(self):
-        self._listUserLink.click()
+        pass
 
     # Navigate to the forum message list
     def navigate_forum_messages_list_page(self):
-        self._listForumLink.click()
+        pass
 

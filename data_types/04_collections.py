@@ -177,13 +177,6 @@ print spam              # Delete an item
 
 
 #===============================================================================
-# EXERCISE:
-# - How would you work with a list to emulate a LIFO stack?
-# - Would it be efficient?
-#===============================================================================
-
-
-#===============================================================================
 # SOURCES:
 #  - http://docs.python.org/2/tutorial/introduction.html#lists
 #  - http://docs.python.org/2/tutorial/datastructures.html#tuples-and-sequences

@@ -124,7 +124,6 @@ print "spam, eggs, foo".split(", ", 1)     # Split by given character, returning
 
 print ", ".join(("spam", "eggs", "foo"))   # Use string as separator to concatenate an iterable of strings
 
-
 # Let's format strings
 
 print "%s %s %d" % (spam, spam, 7)         # This is the old string formatting, similar to C
@@ -133,17 +132,12 @@ print "{0} {0} {1}".format(spam, 7)        # This is the new string formatting m
 
 print "{} {}".format(spam, 7.12345)
 
-print U"[{0:16}|{1:16}]".format(-7.12345, 7.12345)  # Use colon and width of formatted value
+# Change strings
 
-print U"[{0:>16}|{1:<16}]".format(-7.12345, 7.12345)  # Use <, >, =, ^ to specify the alignment of the value
+print (spam[0])                            # Strings are lists and we can get the value by index
+spam[0] = 'm'                              # Change one character of the string by index
+print (spam)
 
-print U"[{0:^16.3f}|{1:^16.3f}]".format(-7.12345, 7.12345)  # For floats, use the dot . and the f to specify precision of floats
-
-print U"[{0:_^16.3f}|{1:_^16.3f}]".format(-7.12345, 7.12345)  # Specify the filling value before the alignment
-
-print U"[{0:^+16.3f}|{1:^+16.3f}]".format(-7.12345, 7.12345)  # Force the sign appearance
-
-print U"{0:b} {0:c} {0:o} {0:x}".format(65)  # For integers, specify base representation (binary, unicode character, octal, hexadecimal
 
 
 #===============================================================================
