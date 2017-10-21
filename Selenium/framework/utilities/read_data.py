@@ -15,7 +15,6 @@ def get_csv_data(csv_path):
     csv_data = open(str(csv_path), "r")
     content = csv.reader(csv_data)
 
-    print (content)
     # skip header line
     next(content)
 

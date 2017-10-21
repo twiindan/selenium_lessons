@@ -23,7 +23,7 @@ class testLogin():
     def setup(self):
         self.login_page.navigate()
 
-    @data(*get_csv_data('/Users/arobres/PycharmProjects/selenium_lessons/Selenium/framework/data/login_data.csv'))
+    @data(*get_csv_data('./framework/data/login_data.csv'))
     @unpack
     def test_incorrect_login(self, username, password):
         self.login_page.locate_elements()
