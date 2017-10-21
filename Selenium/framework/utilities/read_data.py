@@ -1,14 +1,26 @@
 import csv
-def getCSVData(fileName):
-    # create an empty list to store rows
+import os.path
+
+
+def get_csv_data(csv_path):
+    """
+    read test data from csv and return as list
+
+    @type csv_path: string
+    @param csv_path: some csv path string
+    @return list
+    """
+
     rows = []
-    # open the CSV file
-    dataFile = open(fileName, "r")
-    # create a CSV Reader from CSV file
-    reader = csv.reader(dataFile)
-    # skip the headers
-    next(reader)
-    # add rows from reader to list
-    for row in reader:
+    csv_data = open(str(csv_path), "r")
+    content = csv.reader(csv_data)
+
+    print (content)
+    # skip header line
+    next(content)
+
+    # add rows to list
+    for row in content:
         rows.append(row)
+
     return rows
