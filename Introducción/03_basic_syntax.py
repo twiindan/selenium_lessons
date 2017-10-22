@@ -41,18 +41,11 @@ print (spam)
 spam = 10
    print (spam)
 
-
-def spam():
-    eggs = 10
-    return eggs
-print (spam())
-
-
 def spam():
     eggs = 10
     return eggs
 
-print (spam())
+print(spam())
 
 
 #===============================================================================
