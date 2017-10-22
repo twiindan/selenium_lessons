@@ -1,8 +1,6 @@
 #-*- coding: utf-8 -*-
 
 
-#ACCESS BY INDEX AND CONCATENATE IS MISSING
-
 spam = "spam"                    # a string
 print(spam)
 
@@ -102,7 +100,7 @@ print("{} {}".format(spam, 7.12345))
 # Change strings
 
 print(spam[0])                            # Strings are lists and we can get the value by index
-#spam[0] = 'm'                             # Change one character of the string by index
+spam[0] = 'm'                             # Change one character of the string by index
 
 # Is not possible change a character in a string because the strings are inmutable elements.
 # To change it, you should create another string or convert to List

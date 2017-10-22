@@ -154,14 +154,6 @@ print(spammer.male)
 #===============================================================================
 
 
-# ===============================================================================
-# TIME TO START WORKING:
-#   - http://www.itmaybeahack.com/book/python-2.6/html/p03/p03c03_patterns.html#state
-#   - How would you implement such a game?
-#   - open basic/exercises/03_classes.py and implement it in there
-# ===============================================================================
-
-
 #===============================================================================
 # SOURCES:
 #  - http://docs.python.org/2/tutorial/classes.html#a-first-look-at-classes

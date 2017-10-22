@@ -73,6 +73,7 @@ for row in csv_reader:
     for data in row:
         print(data)
     print("ROW DATA FINISH\n")
+
 csv_file.close()
 
 
