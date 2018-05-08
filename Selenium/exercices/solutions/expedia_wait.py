@@ -29,15 +29,15 @@ destinationBox = driver.find_element(By.ID, "flight-destination-hp-flight")
 destinationBox.clear()
 destinationBox.send_keys("Madrid")
 
-# Find departure time and type "23/11/2017"
+# Find departure time and type "23/11/2018"
 departTime = driver.find_element(By.ID, "flight-departing-hp-flight")
 departTime.clear()
-departTime.send_keys("23/11/2017")
+departTime.send_keys("23/11/2018")
 
-# Find departure time and type "30/11/2017"
+# Find departure time and type "30/11/2018"
 returnTime = driver.find_element(By.ID, "flight-returning-hp-flight")
 returnTime.clear()
-returnTime.send_keys("30/11/2017")
+returnTime.send_keys("30/11/2018")
 
 # Find adult dropdown and select 5 adults
 adultsDropdown = driver.find_element(By.ID, "flight-adults-hp-flight")
