@@ -10,7 +10,7 @@
 
 3- Create new virtualenv
 
-    virtualenv path/virtualenv_name
+    virtualenv -p python3 path/virtualenv_name
 
 4- activate virtualenv
 
