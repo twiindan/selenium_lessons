@@ -1,9 +1,0 @@
-- Download Geckodriver from https://github.com/mozilla/geckodriver/releases
-- Extract it
-
-- Move it to one of the following options:
-    - /usr/local/bin
-    - One of the folders of sys.path
-    - Add the folder where is located Geckodriver to the PATH:
-        export PATH=$PATH:/path/to/directory/of/executable/downloaded/in/previous/step
-
