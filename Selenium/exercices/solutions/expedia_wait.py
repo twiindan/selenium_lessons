@@ -34,11 +34,6 @@ departTime = driver.find_element(By.ID, "flight-departing-hp-flight")
 departTime.clear()
 departTime.send_keys("23/11/2018")
 
-# Find departure time and type "30/11/2018"
-returnTime = driver.find_element(By.ID, "flight-returning-hp-flight")
-returnTime.clear()
-returnTime.send_keys("30/11/2018")
-
 # Find adult dropdown and select 5 adults
 adultsDropdown = driver.find_element(By.ID, "flight-adults-hp-flight")
 adultsSel = Select(adultsDropdown)
@@ -65,8 +60,8 @@ for button in findButtons:
 # Wait the element that contain the first price and print it. Wait it 15 seconds with 0.5 polling frequency
 # You can use the CSS Selector ".offer-price>span" to get the first price
 element = WebDriverWait(driver, timeout=15,
-                        poll_frequency=0.5).until(EC.presence_of_element_located((By.CSS_SELECTOR,
-                                                                                  ".offer-price>span")))
+                        poll_frequency=0.5).until(EC.presence_of_element_located((By.ID,
+                                                                                  "filter-container")))
 print(element.text)
 sleep(3)
 
