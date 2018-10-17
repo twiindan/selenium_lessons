@@ -28,11 +28,6 @@ driver.implicitly_wait(10)
 # Find departure time and type "23/11/2017"
 
 
-
-# Find departure time and type "30/11/2017"
-
-
-
 # Find adult dropdown and select 5 adults
 
 

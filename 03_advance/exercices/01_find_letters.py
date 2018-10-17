@@ -11,9 +11,4 @@ string = 'Python is a widely used high-level programming language for general-pu
          'The language provides constructs intended to enable writing clear programs on both a small and large scale.'
 
 # Iterate the string character by character
-
-
-# Compare if character is "a" or "A"
-
-
-print(counter)
+    # Compare if character is "a" or "A"

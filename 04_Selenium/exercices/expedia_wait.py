@@ -1,6 +1,9 @@
+from selenium.webdriver.support.select import Select
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.select import Select
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+from time import sleep
 
 # Configure the baseURL
 baseUrl = "https://www.expedia.es"
@@ -11,7 +14,6 @@ driver.maximize_window()
 
 # Navigage to URL and put a 10 seconds implicit wait
 driver.get(baseUrl)
-driver.implicitly_wait(10)
 
 # Find and click on element "Flights"
 travelType = driver.find_element(By.ID, "tab-flight-tab-hp")
@@ -27,15 +29,10 @@ destinationBox = driver.find_element(By.ID, "flight-destination-hp-flight")
 destinationBox.clear()
 destinationBox.send_keys("Madrid")
 
-# Find departure time and type "23/11/2018"
+# Find departure time and type "23/11/2017"
 departTime = driver.find_element(By.ID, "flight-departing-hp-flight")
 departTime.clear()
-departTime.send_keys("23/11/2018")
-
-# Find departure time and type "30/11/2018"
-returnTime = driver.find_element(By.ID, "flight-returning-hp-flight")
-returnTime.clear()
-returnTime.send_keys("30/11/2018")
+departTime.send_keys("23/11/2017")
 
 # Find adult dropdown and select 5 adults
 adultsDropdown = driver.find_element(By.ID, "flight-adults-hp-flight")
@@ -60,5 +57,14 @@ for button in findButtons:
         button.click()
         break
 
-#Quit Driver
+# Wait the element that contain the first price and print it. Wait it 15 seconds with 0.5 polling frequency
+# You can use the ID "filter-container" to get the first price
+
+
+
+
+
+
 driver.quit()
+
+
