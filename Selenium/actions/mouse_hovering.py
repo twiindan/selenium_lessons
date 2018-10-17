@@ -9,7 +9,7 @@ driver.maximize_window()
 driver.get(baseUrl)
 driver.implicitly_wait(3)
 
-driver.execute_script("window.scrollBy(0, 600);")
+driver.execute_script("window.scrollBy(0, 800);")
 time.sleep(2)
 element = driver.find_element(By.ID, "mousehover")
 itemToClickLocator = ".//div[@class='mouse-hover-content']//a[text()='Top']"
