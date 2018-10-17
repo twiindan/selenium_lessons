@@ -56,10 +56,13 @@ class testCreateUser():
         # Click on Save Button
         user_list_page = user_page.click_button()
 
+
         # Find the username element created (using the username variable)
         username_element = user_list_page.search_user(username)
 
         # Assert element text from the username element is the same than username variable
+        print(username_element.text)
+        print(username)
         assert_equals(username_element.text, username)
 
     @classmethod
