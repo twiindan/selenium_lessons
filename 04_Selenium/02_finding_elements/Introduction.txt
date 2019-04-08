@@ -45,7 +45,6 @@ driver.find_elements(By.XPATH, '//button')
 
 These are the attributes available for By class:
 
-ID = "id"
 XPATH = "xpath"
 LINK_TEXT = "link text"
 PARTIAL_LINK_TEXT = "partial link text"

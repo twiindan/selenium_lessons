@@ -8,5 +8,8 @@ driver.set_window_size(800, 600)
 sleep(5)
 
 driver.maximize_window()
-
+sleep(5)
+driver.minimize_window()
+sleep(5)
+driver.quit()
 

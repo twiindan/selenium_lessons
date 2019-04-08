@@ -1,4 +1,4 @@
-- Download Geckodriver from http://chromedriver.storage.googleapis.com/index.html
+- Download ChromeDriver from http://chromedriver.storage.googleapis.com/index.html
 - Extract it
 
 - Move it to one of the following options:

@@ -44,7 +44,7 @@ Example using Classes
 
 input[class=displayed-class]
 .displayed-class
-input#displayed-class
+input.displayed-class
 
 '''
 
@@ -82,7 +82,7 @@ The special characters used as wildcards are the following:
 
     - Represents the starting text --> ^
     - Represents the ending text --> $
-    - Represents the text contained
+    - Represents the text contained --> *
 '''
 
 
