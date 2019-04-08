@@ -30,22 +30,11 @@ destinationBox.send_keys("Madrid")
 # Find departure time and type "23/11/2018"
 departTime = driver.find_element(By.ID, "flight-departing-hp-flight")
 departTime.clear()
-departTime.send_keys("23/11/2018")
+departTime.send_keys("23/05/2019")
 
-# Find adult dropdown and select 5 adults
-adultsDropdown = driver.find_element(By.ID, "flight-adults-hp-flight")
-adultsSel = Select(adultsDropdown)
-adultsSel.select_by_value("5")
-
-# Find child dropdown and select 1 children
-childDropdown = driver.find_element(By.ID, "flight-children-hp-flight")
-childSel = Select(childDropdown)
-childSel.select_by_value("1")
-
-# Find the first option in the child age
-oldDropdown = driver.find_element(By.ID, "flight-age-select-1-hp-flight")
-oldSel = Select(oldDropdown)
-oldSel.select_by_index(1)
+# Close Calendar
+close_button = driver.find_element_by_css_selector('.datepicker-close-btn.close.btn-text')
+close_button.click()
 
 # Find the "Find" button and click on
 findButtons = driver.find_elements(By.XPATH, "//span[text()='Buscar']")

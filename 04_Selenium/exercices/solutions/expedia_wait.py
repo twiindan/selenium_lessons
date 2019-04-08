@@ -34,20 +34,8 @@ departTime = driver.find_element(By.ID, "flight-departing-hp-flight")
 departTime.clear()
 departTime.send_keys("23/11/2018")
 
-# Find adult dropdown and select 5 adults
-adultsDropdown = driver.find_element(By.ID, "flight-adults-hp-flight")
-adultsSel = Select(adultsDropdown)
-adultsSel.select_by_value("5")
+# Close calendar
 
-# Find child dropdown and select 1 children
-childDropdown = driver.find_element(By.ID, "flight-children-hp-flight")
-childSel = Select(childDropdown)
-childSel.select_by_value("1")
-
-# Find the first option in the child age
-oldDropdown = driver.find_element(By.ID, "flight-age-select-1-hp-flight")
-oldSel = Select(oldDropdown)
-oldSel.select_by_index(1)
 
 # Find the "Find" button and click on
 findButtons = driver.find_elements(By.XPATH, "//span[text()='Buscar']")
