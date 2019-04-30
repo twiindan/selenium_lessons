@@ -29,12 +29,14 @@ destinationBox = driver.find_element(By.ID, "flight-destination-hp-flight")
 destinationBox.clear()
 destinationBox.send_keys("Madrid")
 
-# Find departure time and type "23/11/2018"
+# Find departure time and type "23/05/2019"
 departTime = driver.find_element(By.ID, "flight-departing-hp-flight")
 departTime.clear()
-departTime.send_keys("23/11/2018")
+departTime.send_keys("23/05/2019")
 
-# Close calendar
+# Close Calendar
+close_button = driver.find_element_by_css_selector('.datepicker-close-btn.close.btn-text')
+close_button.click()
 
 
 # Find the "Find" button and click on

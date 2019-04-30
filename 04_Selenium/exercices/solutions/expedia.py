@@ -27,7 +27,7 @@ destinationBox = driver.find_element(By.ID, "flight-destination-hp-flight")
 destinationBox.clear()
 destinationBox.send_keys("Madrid")
 
-# Find departure time and type "23/11/2018"
+# Find departure time and type "23/05/2019"
 departTime = driver.find_element(By.ID, "flight-departing-hp-flight")
 departTime.clear()
 departTime.send_keys("23/05/2019")
